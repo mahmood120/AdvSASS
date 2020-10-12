@@ -25,7 +25,7 @@ body {
   font-size: 2rem;
   height: 80vh;
   width: 100%;
-  background-image: linear-gradient(to left bottom, rgba(128, 214, 113, 0.8), rgba(39, 180, 133, 0.8)), url(../img/hero.jpg);
+  background-image: linear-gradient(to left bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)), url(../img/hero.jpg);
   background-size: cover;
   background-position: top;
   clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
@@ -40,7 +40,7 @@ body {
   height: 5rem; }
 
 .header__logo:hover {
-  animation: logoHover .1s ease-in; }
+  animation: logoHover 0.1s ease-in; }
 
 .header__text-box {
   position: absolute;
@@ -60,14 +60,14 @@ body {
   font-size: 6rem;
   font-weight: 400;
   letter-spacing: 3.5rem;
-  animation: moveLeft .5s ease-in-out; }
+  animation: moveLeft 0.5s ease-in-out; }
 
 .heading-primary--sub {
   display: block;
   font-size: 2rem;
   font-weight: 700;
   letter-spacing: 1.75rem;
-  animation: moveRight .5s ease-in-out; }
+  animation: moveRight 0.5s ease-in-out; }
 
 .btn:link,
 .btn:visited {
@@ -78,7 +78,7 @@ body {
   font-size: 1.6rem;
   border-radius: 5rem;
   position: relative;
-  transition: all .1s ease-in-out; }
+  transition: all 0.1s ease-in-out; }
 
 .btn::after {
   content: "";
@@ -90,7 +90,7 @@ body {
   left: 0;
   z-index: -1;
   border-radius: 5rem;
-  transition: all .4s ease-in-out; }
+  transition: all 0.4s ease-in-out; }
 
 .btn:hover {
   transform: translateY(-0.3rem);
@@ -112,7 +112,7 @@ body {
   opacity: 0; }
 
 .btn--animated {
-  animation: moveBottom .5s ease-in-out 1s;
+  animation: moveBottom 0.5s ease-in-out 1s;
   animation-fill-mode: backwards; }
 
 @keyframes moveLeft {
