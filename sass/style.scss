@@ -48,75 +48,7 @@ body {
     transition: all .4s;
 }
 
-.sass {
-    width: 100%;
-    height: 30rem;
-    font-size: 1.6rem;
-}
 
-nav {
-    @include clearfix();
-    background-color: $color-secondary;
-
-    .navigation {
-        float: left;
-        list-style: none;
-
-        li {
-            display: inline-block;
-            margin-left: 10px;
-
-            &:first-child {
-                margin-left: 0;
-            }
-
-            a:link,
-            a:visited {
-                @include style-links-txt($white);
-
-                &:hover {
-                    color: $color-hot;
-                }
-            }
-        }
-    }
-
-    .button {
-        float: right;
-        %btn-placeholder {
-            padding: 5px 15px;
-            display: inline-block;
-            border-radius: 50px;
-            width: $width-btn;
-            text-align: center;
-            @include style-links-txt($color-blue);
-        }
-
-        .btn-main {
-
-            &:link {
-                @extend %btn-placeholder;
-                background-color: $color-primary;
-            }
-
-            &:link:hover {
-                background-color: darken($color-primary, $amount: 5%);
-            }
-        }
-
-        .btn-hot {
-
-            &:link {
-                @extend %btn-placeholder;
-                background-color: $color-hot;
-            }
-
-            &:link:hover {
-                background-color: lighten($color-hot, $amount: 15%);
-            }
-        }
-    }
-}
 
 .header {
     font-size: 2rem;
