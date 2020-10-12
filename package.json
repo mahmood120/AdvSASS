@@ -1,0 +1,14 @@
+{
+  "name": "advancedsass",
+  "version": "1.0.0",
+  "description": "Landing page for naturs",
+  "main": "index.js",
+  "scripts": {
+    "runsass": "node-sass sass/style.scss css/style.css -w"
+  },
+  "author": "Mahmood Alhasan",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^4.14.1"
+  }
+}
