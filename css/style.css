@@ -76,6 +76,13 @@ body {
     letter-spacing: 1.75rem;
     animation: moveRight 0.5s ease-in-out; }
 
+.grid {
+  height: 90vh; }
+
+.row {
+  display: block;
+  background-color: #eee; }
+
 .btn:link, .btn:visited {
   text-transform: uppercase;
   text-decoration: none;
@@ -141,3 +148,20 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center; }
+
+.grid {
+  height: 90vh;
+  margin: auto; }
+
+.row {
+  display: block;
+  background-color: #eee;
+  max-width: 114rem;
+  margin: auto; }
+  .row:not(:last-child) {
+    margin-bottom: 1rem; }
+  .row .col-1-of-2 {
+    width: calc( (100% - $gutter-horizontal )); }
+  .row div {
+    display: inline-block;
+    background-color: #ccc; }
