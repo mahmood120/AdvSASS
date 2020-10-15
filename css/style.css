@@ -51,6 +51,11 @@ html {
 
 body {
   box-sizing: border-box; }
+  body {
+    padding: 0; 
+  margin: 0;
+  }
+
 
 body {
   font-family: "lato", sans-serif;
@@ -160,8 +165,26 @@ body {
   margin: auto; }
   .row:not(:last-child) {
     margin-bottom: 1rem; }
+  .row:after {
+    content: "";
+    display: table;
+    clear: both; }
+  .row [class^="col-"] {
+    background-color: #ffa546;
+    color: #fff;
+    float: left;
+    padding: 1rem; }
+    .row [class^="col-"]:not(:last-child) {
+      margin-right: 1rem; }
   .row .col-1-of-2 {
-    width: calc( (100% - $gutter-horizontal )); }
-  .row div {
-    display: inline-block;
-    background-color: #ccc; }
+    width: calc((100% - 1rem) /2); }
+  .row .col-1-of-3 {
+    width: calc((100% - 2 * 1rem) / 3); }
+  .row .col-2-of-3 {
+    width: calc(2 * ((100% - 2 * 1rem) / 3) + 1rem); }
+  .row .col-1-of-4 {
+    width: calc((100% - 3 * 1rem) / 4); }
+  .row .col-2-of-4 {
+    width: calc(2 * ((100% - 3 * 1rem) / 4) + 1rem); }
+  .row .col-3-of-4 {
+    width: calc(3 * ((100% - 3 * 1rem) / 4) + 2 * 1rem); }
