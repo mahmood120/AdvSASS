@@ -270,6 +270,14 @@ body {
       display: block;
       position: absolute; }
 
+.feature-box {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 2.5rem;
+  font-size: 1.5rem;
+  text-align: center;
+  border-radius: 3px;
+  box-shadow: 0 1rem 2rem rgba(18, 18, 18, 0.2); }
+
 .header {
   display: none;
   font-size: 2rem;
@@ -336,3 +344,14 @@ body {
   height: 80vh;
   margin-top: -20vh;
   padding: 20vh 0; }
+
+.section-features {
+  height: 80vh;
+  padding: 10rem 0;
+  font-size: 2rem;
+  width: 100%;
+  background-image: linear-gradient(to left bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)), url(../img/nat-4.jpg);
+  background-size: cover;
+  background-position: top;
+  clip-path: polygon(0 0, 100% 0, 100% 65vh, 0 100%);
+  transition: all .4s ease-in-out; }
