@@ -210,6 +210,66 @@ body {
   box-shadow: 0 0.5rem 1rem rgba(18, 18, 18, 0.5);
   transform: translateY(1px); }
 
+.composition {
+  width: 100%;
+  position: relative; }
+  .composition__photo {
+    width: 55%;
+    box-shadow: 0 1.5rem 4rem rgba(18, 18, 18, 0.4);
+    border-radius: 5px;
+    position: absolute;
+    transition: all .2s ease-in-out;
+    z-index: 0;
+    outline-offset: 2rem; }
+    .composition__photo--p1 {
+      left: 0;
+      top: -2rem; }
+    .composition__photo--p2 {
+      right: 1rem;
+      top: 2rem; }
+    .composition__photo--p3 {
+      left: 20%;
+      top: 10rem; }
+    .composition__photo:hover {
+      outline: 1.5rem solid #7ed56f;
+      transform: scale(1.05);
+      box-shadow: 0 2.5rem 4rem rgba(18, 18, 18, 0.5);
+      z-index: 1; }
+  .composition:hover .composition__photo:not(:hover) {
+    transform: scale(0.9); }
+
+.compositionX {
+  width: 100%;
+  position: relative; }
+  .compositionX__photo {
+    width: 35rem;
+    height: 35rem;
+    box-shadow: 0 1.5rem 4rem rgba(18, 18, 18, 0.2);
+    border-radius: 100rem;
+    position: absolute; }
+    .compositionX__photo::after {
+      content: "";
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      border: 5px solid red; }
+    .compositionX__photo--p1 {
+      left: 0;
+      top: -2rem; }
+    .compositionX__photo--p2 {
+      right: 1rem;
+      top: 2rem; }
+    .compositionX__photo--p3 {
+      left: 20%;
+      top: 10rem; }
+    .compositionX__photo img {
+      height: 100%;
+      width: 100%;
+      margin: 0;
+      padding: 0;
+      display: block;
+      position: absolute; }
+
 .header {
   display: none;
   font-size: 2rem;
