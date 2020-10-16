@@ -275,8 +275,18 @@ body {
   padding: 2.5rem;
   font-size: 1.5rem;
   text-align: center;
-  border-radius: 3px;
-  box-shadow: 0 1rem 2rem rgba(18, 18, 18, 0.2); }
+  border-radius: 5px;
+  box-shadow: 0 1.5rem 4rem rgba(18, 18, 18, 0.2);
+  transition: transform .4s ease-in-out; }
+  .feature-box__icon {
+    font-size: 6rem;
+    display: inline-block;
+    line-height: 1;
+    background-image: linear-gradient(to right, #7ed56f, #28b485);
+    -webkit-background-clip: text;
+    color: transparent; }
+  .feature-box:hover {
+    transform: translateY(-1.5rem) scale(1.05); }
 
 .header {
   display: none;
@@ -325,19 +335,19 @@ body {
     float: left;
     padding: 1rem; }
     .row [class^="col-"]:not(:last-child) {
-      margin-right: 1rem; }
+      margin-right: 2rem; }
   .row .col-1-of-2 {
-    width: calc((100% - 1rem) /2); }
+    width: calc((100% - 2rem) /2); }
   .row .col-1-of-3 {
-    width: calc((100% - 2 * 1rem) / 3); }
+    width: calc((100% - 2 * 2rem) / 3); }
   .row .col-2-of-3 {
-    width: calc(2 * ((100% - 2 * 1rem) / 3) + 1rem); }
+    width: calc(2 * ((100% - 2 * 2rem) / 3) + 2rem); }
   .row .col-1-of-4 {
-    width: calc((100% - 3 * 1rem) / 4); }
+    width: calc((100% - 3 * 2rem) / 4); }
   .row .col-2-of-4 {
-    width: calc(2 * ((100% - 3 * 1rem) / 4) + 1rem); }
+    width: calc(2 * ((100% - 3 * 2rem) / 4) + 2rem); }
   .row .col-3-of-4 {
-    width: calc(3 * ((100% - 3 * 1rem) / 4) + 2 * 1rem); }
+    width: calc(3 * ((100% - 3 * 2rem) / 4) + 2 * 2rem); }
 
 .section-about {
   background-color: rgba(247, 247, 247, 0.3);
