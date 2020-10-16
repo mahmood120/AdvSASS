@@ -26,5 +26,9 @@
 
     clip-path: polygon(0 0, 100% 0, 100% 65vh, 0 100%);
     // position: relative;
-    transition: all .4s ease-in-out;
+    // transition: all .4s ease-in-out;
+    transform: skewY(-7deg);
+    & > *{
+        transform: skewY(7deg);
+    }
 }
