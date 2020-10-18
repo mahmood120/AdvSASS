@@ -4,7 +4,7 @@
     font-size: 1.5rem;
     text-align: center;
     border-radius: 5px;
-    box-shadow: 0 1.5rem 4rem rgba($color-black, .2);
+    @include shadows;
     transition: transform .4s ease-in-out;
 
     &__icon {
@@ -17,6 +17,6 @@
     }
 
     &:hover {
-        transform: translateY(-1.5rem) scale(1.05);
+        transform: translateY(-1.5rem) scale(1.01);
     }
 }

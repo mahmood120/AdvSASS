@@ -1,6 +1,6 @@
 .section-about{
     // display: none;
-    background-color: rgba($color-light-gray,  .3);
+    background-color: $color-light-gray;
 
     // padding: 25rem 0;
     height: 80vh;
@@ -31,4 +31,14 @@
     & > *{
         transform: skewY(7deg);
     }
+}
+.section-tours{
+    background-color: $color-light-gray;
+    // height: 100vh;
+    margin-top: -20vh;
+    padding: 25rem 0 15rem;
+}
+.section-stories{
+    padding: 15rem 0;
+    background-color: $color-light-gray;
 }
