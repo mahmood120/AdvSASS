@@ -1,13 +1,14 @@
 .card {
-    height: 51rem;
-    transition: all .8s ease-in-out;
+    height: 52rem;
+    
+    -moz-perspective: 150rem;
     -webkit-perspective: 150rem;
     perspective: 150rem;
-    -moz-perspective: 150rem;
     position: relative;
 
     &__side {
-        height: 51rem;
+        height: 52rem;
+        transition: all .8s ease-in-out;
         width: 100%;
         font-size: 2rem;
         transition: all .8s ease;
@@ -15,6 +16,7 @@
         overflow: hidden;
         top: 0;
         left: 0;
+        -webkit-backface-visibility: hidden;
         backface-visibility: hidden;
         border-radius: 5px;
         @include shadows;
@@ -57,7 +59,7 @@
     &__picture {
         background-size: cover;
         background-repeat: no-repeat;
-        background-position: top;
+        // background-position: top;
         -webkit-clip-path: polygon(0 0, 100% 0, 100% 18rem, 0 100%);
         clip-path: polygon(0 0, 100% 0, 100% 18rem, 0 100%);
         height: 23rem;
@@ -105,8 +107,8 @@
 
     &__heading-span {
         padding: .75rem;
-        box-decoration-break: clone;
         -webkit-box-decoration-break: clone;
+        box-decoration-break: clone;
 
         &--1 {
             background-image: linear-gradient(to right bottom,
@@ -153,6 +155,7 @@
         left: 50%;
         transform: translate(-50%, -50%);
         width: 90%;
+        text-align: center;
     }
 
     &__price-box {
